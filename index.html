@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="上海杉达学院计算机科学与技术专业学生个人展示平台 — 项目作品集与能力展示" />
+  <title>季茹意 · 个人展示平台</title>
+  <!-- 可选：联网时加载更精致的字体；离线会自动回退到系统字体 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- ===================== 导航栏 ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo">季茹意<span>.</span></a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">关于</a>
+        <a href="#skills">能力</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="切换明暗主题">🌙</button>
+        <button class="nav__burger" id="navBurger" aria-label="菜单">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== 首页 Hero ===================== -->
+  <section class="hero" id="home">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="hero__eyebrow">你好，我是</p>
+      <h1 class="hero__title">季茹意</h1>
+      <p class="hero__subtitle">
+        上海杉达学院 · 计算机科学与技术专业<br />
+        <span class="hero__loc">📍 上海</span>
+      </p>
+      <p class="hero__tagline">
+        热衷于移动开发与软硬件结合的计算机专业学生，喜欢用代码把想法变成真正能用的产品。
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">查看我的项目</a>
+        <a href="#skills" class="btn btn--ghost">了解我的能力</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="向下滚动">↓</a>
+  </section>
+
+  <!-- ===================== 关于我 ===================== -->
+  <section class="section" id="about">
+    <div class="section__head">
+      <span class="section__kicker">ABOUT</span>
+      <h2 class="section__title">关于我</h2>
+    </div>
+
+    <div class="about">
+      <div class="about__photo">
+        <img src="assets/img/avatar.jpg" alt="季茹意" />
+      </div>
+      <div class="about__text">
+        <!-- ↓↓↓ 替换为你的自我介绍 ↓↓↓ -->
+        <p>
+          我是上海杉达学院计算机科学与技术专业的一名学生，来自上海。
+          对计算机技术充满好奇，喜欢钻研移动开发与软硬件结合的方向。
+        </p>
+        <p>
+          在校期间我不断探索应用开发、数据处理与可视化，并动手完成过基于鸿蒙的简易应用。
+          我相信好的产品既要逻辑扎实，也要体验顺畅。
+        </p>
+        <ul class="about__facts">
+          <li><strong>学校</strong><span>上海杉达学院</span></li>
+          <li><strong>专业</strong><span>计算机科学与技术</span></li>
+          <li><strong>城市</strong><span>上海</span></li>
+          <li><strong>方向</strong><span>移动端 / 全栈</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 能力 / 技能 ===================== -->
+  <section class="section section--alt" id="skills">
+    <div class="section__head">
+      <span class="section__kicker">SKILLS</span>
+      <h2 class="section__title">我的能力</h2>
+    </div>
+
+    <div class="skills">
+      <!-- ↓↓↓ 按实际情况增删卡片 ↓↓↓ -->
+      <div class="skill-card reveal">
+        <div class="skill-card__icon">💻</div>
+        <h3>编程基础</h3>
+        <p>熟悉 Python、Java、JavaScript 等语言，具备扎实的算法与数据结构基础。</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card__icon">📱</div>
+        <h3>移动开发</h3>
+        <p>了解 HarmonyOS（ArkTS）应用开发，动手完成过鸿蒙简易 App「邻安」。</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card__icon">🎨</div>
+        <h3>前端与界面</h3>
+        <p>熟悉 HTML / CSS / JavaScript 与响应式布局，注重视觉体验与交互细节。</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card__icon">🗄️</div>
+        <h3>后端与数据库</h3>
+        <p>了解常用数据库与接口开发，能进行前后端联调与数据管理。</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card__icon">📊</div>
+        <h3>数据与可视化</h3>
+        <p>能进行数据清洗、分析与图表呈现，用数据讲好故事。</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-card__icon">🤝</div>
+        <h3>团队协作</h3>
+        <p>习惯 Git 协作、文档撰写与项目分工，乐于在团队中承担开发与协调。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 项目展示 ===================== -->
+  <section class="section" id="projects">
+    <div class="section__head">
+      <span class="section__kicker">PROJECTS</span>
+      <h2 class="section__title">项目作品</h2>
+      <p class="section__desc">我做过的一些项目，按时间倒序排列。</p>
+    </div>
+
+    <!-- 项目筛选 -->
+    <div class="filters" id="projectFilters">
+      <button class="filter is-active" data-filter="all">全部</button>
+      <button class="filter" data-filter="mobile">移动开发</button>
+      <button class="filter" data-filter="web">Web / 前端</button>
+      <button class="filter" data-filter="course">课程 / 实训</button>
+    </div>
+
+    <div class="projects" id="projectsGrid">
+      <!-- ↓↓↓ 复制一个 .project-card 即可新增项目；data-cat 需与上方筛选对应 ↓↓↓ -->
+      <article class="project-card reveal" data-cat="mobile">
+        <div class="project-card__thumb"><img src="assets/img/proj-1.svg" alt="邻安 App 缩略图" /></div>
+        <div class="project-card__body">
+          <div class="project-card__tags"><span>鸿蒙 HarmonyOS</span><span>移动开发</span></div>
+          <h3>邻安 · 鸿蒙简易 App</h3>
+          <p>基于 HarmonyOS（ArkTS）开发的邻里 / 社区安全类简易应用，实现信息展示与基础交互。
+            （具体功能可在此补充，如登录、列表、通知提醒等）</p>
+          <div class="project-card__meta">
+            <span>🛠 HarmonyOS / ArkTS</span>
+            <span>📅 待补充年份</span>
+          </div>
+          <div class="project-card__links">
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+            <a href="#" target="_blank" rel="noopener">源码</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="web">
+        <div class="project-card__thumb"><img src="assets/img/proj-2.svg" alt="项目缩略图" /></div>
+        <div class="project-card__body">
+          <div class="project-card__tags"><span>Python</span><span>数据可视化</span></div>
+          <h3>项目二 · 校园数据可视化</h3>
+          <p>采集并清洗校园公开数据，用图表呈现作息与活动分布，辅助决策。</p>
+          <div class="project-card__meta">
+            <span>🛠 Python / ECharts</span>
+            <span>📅 2025</span>
+          </div>
+          <div class="project-card__links">
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+            <a href="#" target="_blank" rel="noopener">源码</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="course">
+        <div class="project-card__thumb"><img src="assets/img/proj-3.svg" alt="项目缩略图" /></div>
+        <div class="project-card__body">
+          <div class="project-card__tags"><span>课程设计</span><span>全栈</span></div>
+          <h3>项目三 · 课程管理系统</h3>
+          <p>数据库课程设计，实现选课、成绩与用户权限管理，前后端联调。</p>
+          <div class="project-card__meta">
+            <span>🛠 Java / MySQL</span>
+            <span>📅 2024</span>
+          </div>
+          <div class="project-card__links">
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+            <a href="#" target="_blank" rel="noopener">源码</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-cat="mobile">
+        <div class="project-card__thumb"><img src="assets/img/proj-4.svg" alt="项目缩略图" /></div>
+        <div class="project-card__body">
+          <div class="project-card__tags"><span>小程序</span><span>UI</span></div>
+          <h3>项目四 · 校园活动小程序</h3>
+          <p>面向校内活动的发布与报名小程序，注重信息流与报名体验。</p>
+          <div class="project-card__meta">
+            <span>🛠 微信小程序</span>
+            <span>📅 2024</span>
+          </div>
+          <div class="project-card__links">
+            <a href="#" target="_blank" rel="noopener">Demo</a>
+            <a href="#" target="_blank" rel="noopener">源码</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== 联系 ===================== -->
+  <section class="section section--alt" id="contact">
+    <div class="section__head">
+      <span class="section__kicker">CONTACT</span>
+      <h2 class="section__title">联系我</h2>
+      <p class="section__desc">欢迎就合作、交流与机会与我联系。</p>
+    </div>
+
+    <div class="contact">
+      <!-- ↓↓↓ 替换为你的真实联系方式 ↓↓↓ -->
+      <a class="contact__item" href="mailto:yurri20070304@qq.com">
+        <span class="contact__icon">✉️</span>
+        <span>yurri20070304@qq.com</span>
+      </a>
+      <a class="contact__item" href="tel:13681828196">
+        <span class="contact__icon">📱</span>
+        <span>136 8182 8196</span>
+      </a>
+      <a class="contact__item" href="https://github.com/yurriii34" target="_blank" rel="noopener">
+        <span class="contact__icon">💻</span>
+        <span>GitHub · yurriii34</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> 季茹意 · 上海杉达学院</p>
+    <p class="footer__note">用 ❤️ 与代码搭建</p>
+  </footer>
+
+  <!-- 灯箱 -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="关闭">×</button>
+    <img src="" alt="放大查看" id="lightboxImg" />
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
